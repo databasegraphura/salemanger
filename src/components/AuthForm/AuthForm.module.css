@@ -1,0 +1,101 @@
+/* src/components/AuthForm/AuthForm.module.css */
+
+.authCard {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 40px;
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.authTitle {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form groups */
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #007bff; /* A nice blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.submitButton {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  transition: color 0.2s ease-in-out;
+}
+
+.toggleButton:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.errorMessage {
+  color: #dc3545; /* Red color for errors */
+  font-size: 14px;
+  margin-top: -10px; /* Adjust spacing */
+  margin-bottom: 10px;
+  text-align: left;
+}

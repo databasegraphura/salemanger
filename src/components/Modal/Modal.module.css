@@ -1,0 +1,62 @@
+/* src/components/Modal/Modal.module.css */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.75); /* Dark semi-transparent overlay */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 101;
+  width: 90%;
+  max-width: 500px; /* Max width for consistency */
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.modalHeader h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.closeButton:hover {
+  color: #666;
+}
+
+.modalContent {
+  font-size: 16px;
+  color: #555;
+  max-height: 70vh; /* Max height to allow scrolling */
+  overflow-y: auto;
+  padding-right: 10px; /* For scrollbar spacing */
+}

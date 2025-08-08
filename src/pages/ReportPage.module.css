@@ -1,0 +1,224 @@
+/* src/pages/ReportPage.module.css */
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.reportSection {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* Added for alignment of titles and buttons */
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px; /* Space below header */
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+.reportTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px; /* Space above the table */
+}
+
+.reportTable th,
+.reportTable td {
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.reportTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.reportTable tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.reportTable tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.actionButton {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.actionButton:hover {
+  background-color: #0056b3;
+}
+
+/* Filter Form */
+.filterForm {
+  display: flex;
+  gap: 20px; /* Space between form groups */
+  align-items: flex-end; /* Aligns items to the bottom, useful for labels/inputs */
+  margin-bottom: 25px;
+}
+
+.formGroup {
+  flex-grow: 1; /* Allows form groups to expand */
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.searchButton, .submitButton {
+  background-color: #28a745; /* Green for search/submit */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.searchButton:hover, .submitButton:hover {
+  background-color: #218838;
+}
+
+.searchButton:disabled, .submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Modal Specific Styles (for Update/View Call) */
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.modalForm .formInput,
+.modalForm .formTextarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.modalForm .formGroup label {
+  margin-bottom: 5px;
+}
+
+.modalForm .formInput:focus,
+.modalForm .formTextarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+
+.detailItem {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.detailItem strong {
+  color: #007bff;
+  margin-right: 5px;
+}
+
+.errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.successMessage {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Added for status badges in tables */
+.statusBadge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.statusActive {
+  background-color: #d4edda;
+  color: #28a745;
+}
+
+.statusInactive {
+  background-color: #f8d7da;
+  color: #dc3545;
+}
+
+.statusOn_leave {
+    background-color: #fff3cd;
+    color: #856404;
+}
+/* src/pages/ReportPage.module.css (add these lines) */
+
+.deleteButton {
+  background-color: #dc3545; /* Red color for delete */
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
