@@ -26,7 +26,7 @@ const authService = {
       // const URL=process.env.REACT_APP_BACKEND_URL;
       // console.log(URL);
       
-      const response = await api.post("http://localhost:8000/api/v1/auth/signup", userData);
+      const response = await api.post("https://backend-eight-iota-9er9b781j8.vercel.app/api/v1/auth/signup", userData);
       const { token, data: { user } } = response.data;
 
       // Store token and user data locally (if not purely HttpOnly cookies)
